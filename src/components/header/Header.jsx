@@ -1,7 +1,12 @@
-// import styled from 'styled'
+import styled from 'styled-components'
+import theme from '../../assests/theme.js'
+
+const StyledDiv = styled.h1`
+color: ${theme.primary};
+`
 
 export default function Header(){
     return (
-        <div>Header</div>
+        <StyledDiv>Header</StyledDiv>
     )
 }
