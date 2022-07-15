@@ -21,6 +21,9 @@ const Title = styled.h1`
 
 const SubTitle = styled.h5`
     font-weight: 500;
+    &.text-light {
+        color: ${theme.light}
+    }
 `
 
 const Section = styled.section`
@@ -56,9 +59,10 @@ const Link = styled.a`
 `
 
 const Button = styled.button`
+    background: ${theme.main};
     width: max-content;
     display: inline-block;
-    color: ${theme.primary};
+    color: ${theme.white};
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
@@ -74,6 +78,12 @@ const Button = styled.button`
     &.primary {
         background: ${theme.primary};
         color: ${theme.main};
+
+        &:hover {
+            background: ${theme.white};
+            color: ${theme.main};
+            border-color: transparent;
+        }
     }
 `
 
@@ -83,4 +93,8 @@ const Image = styled.img`
     object-fit: cover;
 `
 
-export { Container, Title, Section, Link, Button, Image, SubTitle };
+const Cta = styled.div`
+
+`
+
+export { Container, Title, Section, Link, Button, Image, SubTitle, Cta };

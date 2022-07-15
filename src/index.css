@@ -32,7 +32,3 @@ h3,
 h4 {
     font-weight: 500;
 }
-
-.text-light {
-    color:rgba(255, 255, 255, 0.6) /* theme light */
-}
