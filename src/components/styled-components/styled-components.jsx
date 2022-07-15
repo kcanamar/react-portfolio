@@ -56,6 +56,19 @@ const Link = styled.a`
     &:hover {
         color: ${theme.white}
     }
+    
+    &.scroll {
+        position: absolute;
+        right: -2.3rem;
+        bottom: 5rem;
+        transform: rotate(90deg);
+        font-weight: 300;
+        font-size: 0.9rem;
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+    }
 `
 
 const Button = styled.button`
@@ -91,10 +104,66 @@ const Image = styled.img`
     display: block;
     width: 100%;
     object-fit: cover;
+
+    &.me {
+        background: linear-gradient(${theme.mainVar}, transparent);
+        width: 22rem;
+        height: 30rem;
+        position: absolute;
+        left: calc(50% - 11rem);
+        margin-top: 4rem;
+        border-radius: 12rem 12rem 0 0;
+        overflow: hidden;
+        padding: 5rem 1.5rem 0 1.5rem;
+    }
+`
+const StyledHeader = styled.div`
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+    
+    .header {
+        text-align: center;
+        height: 100%;
+        position: relative;
+        
+    }
+    
+    @media screen and (max-width: 1024px) {
+        height: 68vh;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 100vh;
+    }
 `
 
 const Cta = styled.div`
-
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
 `
 
-export { Container, Title, Section, Link, Button, Image, SubTitle, Cta };
+const Socials = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+
+    &:after {
+        content: '';
+        width: 1px;
+        height: 2rem;
+        background: ${theme.primary}
+    }
+
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
+
+`
+export { Container, Title, Section, Link, Button, Image, SubTitle, Cta, Socials, StyledHeader };
