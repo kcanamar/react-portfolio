@@ -1,12 +1,12 @@
-import styled from 'styled-components'
-import theme from '../../assests/theme.js'
-
-const StyledDiv = styled.h1`
-color: ${theme.primary};
-`
+import { Container, Title, SubTitle } from "../styled-components/styled-components"
 
 export default function Header(){
     return (
-        <StyledDiv>Header</StyledDiv>
+        <header>
+            <Container>
+                <SubTitle>Hello I'm</SubTitle>
+                <Title>Kyle Canamar</Title>
+            </Container>
+        </header>
     )
 }
