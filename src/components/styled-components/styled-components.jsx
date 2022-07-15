@@ -28,6 +28,7 @@ const SubTitle = styled.h5`
 
 const Section = styled.section`
     margin-top: 8rem;
+    height: 100vh;
 
     & h2 {
         text-align: center;
@@ -114,7 +115,7 @@ const Image = styled.img`
         margin-top: 4rem;
         border-radius: 12rem 12rem 0 0;
         overflow: hidden;
-        padding: 5rem 1.5rem 0 1.5rem;
+        padding: 5rem 1.5rem 0.75rem 1.5rem;
     }
 `
 const StyledHeader = styled.div`
@@ -164,6 +165,50 @@ const Socials = styled.div`
     @media screen and (max-width: 600px) {
         display: none;
     }
-
 `
-export { Container, Title, Section, Link, Button, Image, SubTitle, Cta, Socials, StyledHeader };
+
+const StyledNav = styled.nav`
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+
+    a {
+        background: transparent;
+        padding: 0.9rem;
+        border-radius: 50%;
+        color: ${theme.light};
+        font-size: 1.5rem;
+        display: flex;
+        &:hover {
+            background: rgba(0, 0, 0, 0.3)
+        }
+        
+        &.active {
+            background: ${theme.main};
+            color: ${theme.white};
+        }
+    }
+`
+export { 
+    Container, 
+    Title,
+    Section, 
+    Link, 
+    Button, 
+    Image, 
+    SubTitle, 
+    Cta, 
+    Socials, 
+    StyledHeader,
+    StyledNav,
+};

@@ -1,7 +1,7 @@
-// import styled from 'styled-components'
+import { Section } from "../styled-components/styled-components"
 
 export default function About(){
     return (
-        <div>About</div>
+        <Section id="about"> About </Section>
     )
 }

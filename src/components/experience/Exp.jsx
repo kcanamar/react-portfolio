@@ -1,7 +1,8 @@
-// import styled from 'styled'
+import { Section } from "../styled-components/styled-components"
+
 
 export default function Exp(){
     return (
-        <div>Experience</div>
+        <Section id="experience">Experience</Section>
     )
 }

@@ -1,7 +1,8 @@
-// import styled from 'styled'
+import { Section } from "../styled-components/styled-components"
+
 
 export default function Portfolio(){
     return (
-        <div>Portfolio</div>
+        <Section id="portfolio">Portfolio</Section>
     )
 }

@@ -1,7 +1,8 @@
-// import styled from 'styled-components'
+import { Section } from "../styled-components/styled-components"
+
 
 export default function Contact(){
     return (
-        <div>Contact</div>
+        <Section id="contact">Contact</Section>
     )
 }
