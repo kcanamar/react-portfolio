@@ -1,32 +1,47 @@
 import styled from 'styled-components'
 import theme from '../../assests/theme.js'
 
-const Container = styled.div`
+export const Container = styled.div`
     width: ${theme.widthLg};
     margin: 0 auto;
 
     @media screen and (max-width: 1024px) {
-        width: ${theme.widthMd}
+        width: ${theme.widthMd};
     }
     
     @media screen and (max-width: 600px) {
-        width: ${theme.widthSm}
+        width: ${theme.widthSm};
+    }
+
+    &.about {
+        display: grid;
+        grid-template-columns: 35% 50%;
+        gap: 15%;
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+        
+        @media screen and (max-width: 600px) {
+
+        }
     }
 `
 
-const Title = styled.h1`
+export const Title = styled.h1`
     font-weight: 500;
     font-size: 2.5rem;
 `
 
-const SubTitle = styled.h5`
+export const SubTitle = styled.h5`
     font-weight: 500;
     &.text-light {
         color: ${theme.light}
     }
 `
 
-const Section = styled.section`
+export const Section = styled.section`
     margin-top: 8rem;
     height: 100vh;
 
@@ -50,7 +65,7 @@ const Section = styled.section`
     }
 `
 
-const Link = styled.a`
+export const Link = styled.a`
     color: ${theme.primary};
     transition: ${theme.transition};
 
@@ -72,7 +87,7 @@ const Link = styled.a`
     }
 `
 
-const Button = styled.button`
+export const Button = styled.button`
     background: ${theme.main};
     width: max-content;
     display: inline-block;
@@ -101,13 +116,14 @@ const Button = styled.button`
     }
 `
 
-const Image = styled.img`
+export const Image = styled.img`
     display: block;
     width: 100%;
     object-fit: cover;
+    border-radius: 2rem;
 
     &.me {
-        background: linear-gradient(${theme.mainVar}, transparent);
+        background: linear-gradient(${theme.primary}, transparent);
         width: 22rem;
         height: 30rem;
         position: absolute;
@@ -116,9 +132,17 @@ const Image = styled.img`
         border-radius: 12rem 12rem 0 0;
         overflow: hidden;
         padding: 5rem 1.5rem 0.75rem 1.5rem;
+
     }
-`
-const StyledHeader = styled.div`
+
+    @media screen and (max-width: 600px) {
+        &.me {
+            margin-top: 3rem;
+            padding: 2rem 1.5rem 0.75rem 1.5rem;
+        }
+    }
+    `
+export const StyledHeader = styled.div`
     height: 100vh;
     padding-top: 7rem;
     overflow: hidden;
@@ -131,22 +155,24 @@ const StyledHeader = styled.div`
     }
     
     @media screen and (max-width: 1024px) {
+        padding-top: 4rem;
         height: 68vh;
     }
 
     @media screen and (max-width: 600px) {
+        padding-top: 2rem;
         height: 100vh;
     }
 `
 
-const Cta = styled.div`
+export const Cta = styled.div`
     margin-top: 2.5rem;
     display: flex;
     gap: 1.2rem;
     justify-content: center;
 `
 
-const Socials = styled.div`
+export const Socials = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,7 +193,7 @@ const Socials = styled.div`
     }
 `
 
-const StyledNav = styled.nav`
+export const StyledNav = styled.nav`
     background: rgba(0, 0, 0, 0.3);
     width: max-content;
     display: block;
@@ -182,7 +208,7 @@ const StyledNav = styled.nav`
     border-radius: 3rem;
     backdrop-filter: blur(15px);
 
-    a {
+    ${Link} {
         background: transparent;
         padding: 0.9rem;
         border-radius: 50%;
@@ -199,16 +225,96 @@ const StyledNav = styled.nav`
         }
     }
 `
-export { 
-    Container, 
-    Title,
-    Section, 
-    Link, 
-    Button, 
-    Image, 
-    SubTitle, 
-    Cta, 
-    Socials, 
-    StyledHeader,
-    StyledNav,
-};
+export const ContentTitle = styled.h2`
+    font-weight: 500;
+`
+
+export const SmallTag = styled.small`
+    font-size: 0.8rem;
+    color: ${theme.light}
+`
+export const Description = styled.p`
+    margin: 2rem 0 2.6rem;
+    color: ${theme.light};
+
+    @media screen and (max-width: 1024px) {
+        margin: 1rem 0 1.5rem;
+
+    }
+    
+    @media screen and (max-width: 600px) {
+        margin: 1.5rem 0;
+    }
+`
+export const AboutContent = styled.div`
+    @media screen and (max-width: 600px) {
+        text-align: center;
+    }
+`
+export const AboutCards = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+
+    @media screen and (max-width: 600px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+`
+export const CardStyle = styled.article`
+    background: ${theme.primaryVar};
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: ${theme.transition};
+
+    &:hover {
+        background: transparent;
+        border-color: ${theme.mainVar};
+        cursor: default;
+    }
+
+    .icon {
+        color: ${theme.mainVar};
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    ${SubTitle} {
+        font-size: 1rem;
+    }
+`
+export const AboutImgContainer = styled.div`
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(
+        45deg, 
+        transparent, 
+        ${theme.primaryVar},
+        transparent
+    );
+    display: grid;
+    place-items: center;
+
+    @media screen and (max-width: 1024px) {
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+    
+    @media screen and (max-width: 600px) {
+        width: 65%;
+        margin: 0 auto 3rem:
+    }
+`
+export const AboutImage = styled.div`
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: ${theme.transition};
+
+    &:hover {
+        transform: rotate(0deg);
+    }
+`
