@@ -24,18 +24,18 @@ export default function Nav(){
                     <BiUser/>
                 </Link>
                 <Link 
-                    href="#portfolio" 
-                    onClick={() => setActiveNav('#portfolio')} 
-                    className={activeNav === '#portfolio' ? 'active' : ''}
-                >
-                    <BiBook/>
-                </Link>
-                <Link 
                     href="#experience" 
                     onClick={() => setActiveNav('#experience')} 
                     className={activeNav === '#experience' ? 'active' : ''}
                 >
                     <RiServiceLine/>
+                </Link>
+                <Link 
+                    href="#portfolio" 
+                    onClick={() => setActiveNav('#portfolio')} 
+                    className={activeNav === '#portfolio' ? 'active' : ''}
+                >
+                    <BiBook/>
                 </Link>
                 <Link 
                     href="#contact" 
