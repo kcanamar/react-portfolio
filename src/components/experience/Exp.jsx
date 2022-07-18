@@ -1,5 +1,5 @@
 import { Section, SubTitle, ContentTitle, Container } from "../styled-components/styled-components"
-import { ExpBackend, ExpFrontend, ExpHeadings, ExpContent, ExpDetails, ExpDetailSkill, ExpStatus } from "../styled-components/styled-components"
+import { ExpBackend, ExpFrontend, ExpHeadings, ExpContent, ExpDetails, ExpDetailSkill, ExpStatus } from "./styled-components-exp.jsx"
 import { BsFillPatchCheckFill } from 'react-icons/bs'
 
 export default function Exp(){

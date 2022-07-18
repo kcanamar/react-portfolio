@@ -1,5 +1,6 @@
-import { Container, Section, ContentTitle, SubTitle, Image, CardStyle, SmallTag, Link, Description, AboutCards, AboutContent, Button, AboutImgContainer, AboutImage } from "../styled-components/styled-components"
-import Self from "../../assests/headshot.png"
+import { Container, Section, ContentTitle, SubTitle, Image, Link, Button } from "../styled-components/styled-components"
+import { SmallTag, Description, AboutContent, AboutCards, CardStyle, AboutImgContainer, AboutImage } from "./styled-components-about"
+import Self from "../../assests/headshot.png" 
 import { FiAward, FiUsers } from "react-icons/fi"
 import { FaRegFolderOpen } from "react-icons/fa"
 
