@@ -308,7 +308,7 @@ export const StyledNav = styled.nav`
         }
         
         &.active {
-            background: ${theme.main};
+            background: ${theme.primaryVar};
             color: ${theme.white};
         }
     }
