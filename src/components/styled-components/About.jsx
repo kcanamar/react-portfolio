@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import theme from "../../assests/theme"
-import { SubTitle } from "../styled-components/styled-components"
+import { SubTitle } from "./styled-components"
 
 export const SmallTag = styled.small`
     font-size: 0.8rem;
