@@ -41,6 +41,22 @@ export const Container = styled.div`
             gap: 1rem;
         }
     }
+
+    &.services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        
+        @media screen and (max-width: 600px) {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+    }
 `
 
 export const Title = styled.h1`
