@@ -17,7 +17,7 @@ export default function Portfolio(){
                                 </PortfolioImage>
                                 <ProjectTitle>{title}</ProjectTitle>
                                 <PortfolioBtns>
-                                    <Link href={github}><Button>GitHub</Button></Link>
+                                    <Link href={github} target="_blank"><Button>GitHub</Button></Link>
                                     <Link href={live} target="_blank" ><Button className="primary">Live Site</Button></Link>
                                 </PortfolioBtns>
                             </ProtfolioProject>
