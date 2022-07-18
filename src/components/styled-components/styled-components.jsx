@@ -57,6 +57,22 @@ export const Container = styled.div`
             gap: 1.5rem;
         }
     }
+
+    &.portfolio {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+        }
+        
+        @media screen and (max-width: 600px) {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+    }
 `
 
 export const Title = styled.h1`
@@ -163,6 +179,10 @@ export const Image = styled.img`
         overflow: hidden;
         padding: 5rem 1.5rem 0.75rem 1.5rem;
 
+    }
+
+    &.project {
+        height: 20rem;
     }
 
     @media screen and (max-width: 1024px) {
