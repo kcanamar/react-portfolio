@@ -88,6 +88,22 @@ export const Container = styled.div`
             width: ${theme.widthSm};
         }
     }
+
+    &.contact {
+        width: 58%;
+        display: grid;
+        grid-template-columns: 30% 58%;
+        gap: 12%;
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        
+        @media screen and (max-width: 600px) {
+            width: ${theme.widthSm};
+        }
+    }
 `
 
 export const Title = styled.h1`
