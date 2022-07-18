@@ -73,6 +73,21 @@ export const Container = styled.div`
             gap: 1rem;
         }
     }
+
+    &.testimonial {
+        width: 40%;
+
+        .swiper-pagination-clickable .swiper-pagination-bullet-active{
+            background: ${theme.mainVar};
+        }
+        @media screen and (max-width: 1024px) {
+            width: 60%; 
+        }
+        
+        @media screen and (max-width: 600px) {
+            width: ${theme.widthSm};
+        }
+    }
 `
 
 export const Title = styled.h1`
