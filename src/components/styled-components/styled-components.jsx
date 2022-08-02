@@ -232,7 +232,7 @@ export const Image = styled.img`
     `
 export const StyledHeader = styled.div`
     height: 100vh;
-    padding-top: 2rem;
+    padding-top: 4rem;
     overflow: hidden;
     
     .header {
@@ -243,11 +243,11 @@ export const StyledHeader = styled.div`
     }
     
     @media screen and (max-width: 1024px) {
-        padding-top: 1rem;
+        padding-top: 2rem;
     }
 
     @media screen and (max-width: 600px) {
-        padding-top: 0.5rem;
+        padding-top: 1rem;
     }
 `
 
