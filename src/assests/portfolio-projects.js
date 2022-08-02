@@ -20,6 +20,13 @@ const data = [
         github: "https://github.com/kcanamar/pos-frontend",
         live: "https://pos-deliverable.netlify.app/"
     },
+    {
+        id: 4,
+        image: "https://github.com/SunghunP/elevar_crm/blob/main/readme-images/landingpage.png?raw=true",
+        title: "Elevar",
+        github: "https://github.com/SunghunP/elevar_crm",
+        live: "https://elevarcrm.herokuapp.com/"
+    },
 ]
 
 module.exports = data 

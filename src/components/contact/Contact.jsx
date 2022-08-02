@@ -36,7 +36,7 @@ export default function Contact(){
                     <ContactChoice>
                         <MdOutlineCalendarToday className="icon"/>
                         <ChoiceDescription>Schedule A Meeting</ChoiceDescription>
-                        <SubTitle>Google Calander</SubTitle>
+                        <SubTitle>Google Calendar</SubTitle>
                         <Link href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1eMgP4HLz2e6n8RNFB-AdEMRNIpm7eelJJs_emoXfxx-Sk9LbFBXkpv_WbHU1sBCJTLtAlT_Gw" target="_blank">Schedule</Link>
                     </ContactChoice>
                 </ContactOptions>

@@ -36,13 +36,6 @@ export default function Exp(){
                         <ExpDetails>
                             <BsFillPatchCheckFill className='icon'/>
                             <div>
-                                <ExpDetailSkill>Materialize</ExpDetailSkill>
-                                <ExpStatus>Basic</ExpStatus>
-                            </div>
-                        </ExpDetails>
-                        <ExpDetails>
-                            <BsFillPatchCheckFill className='icon'/>
-                            <div>
                                 <ExpDetailSkill>React</ExpDetailSkill>
                                 <ExpStatus>Basic</ExpStatus>
                             </div>
@@ -85,13 +78,6 @@ export default function Exp(){
                             <BsFillPatchCheckFill className='icon'/>
                             <div>
                                 <ExpDetailSkill>Python</ExpDetailSkill>
-                                <ExpStatus>Basic</ExpStatus>
-                            </div>
-                        </ExpDetails>
-                        <ExpDetails>
-                            <BsFillPatchCheckFill className='icon'/>
-                            <div>
-                                <ExpDetailSkill>Django</ExpDetailSkill>
                                 <ExpStatus>Basic</ExpStatus>
                             </div>
                         </ExpDetails>

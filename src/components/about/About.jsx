@@ -1,7 +1,7 @@
 import { Container, Section, ContentTitle, SubTitle, Image, Link, Button } from "../styled-components/styled-components"
 import { SmallTag, Description, AboutContent, AboutCards, CardStyle, AboutImgContainer, AboutImage } from "../styled-components/About"
 import Self from "../../assests/headshot.png" 
-import { FiAward, FiUsers } from "react-icons/fi"
+import { FiAward } from "react-icons/fi"
 import { FaRegFolderOpen } from "react-icons/fa"
 
 export default function About(){
@@ -24,11 +24,11 @@ export default function About(){
                             <SubTitle>Experience</SubTitle>
                             <SmallTag>First Year</SmallTag>
                         </CardStyle>
-                        <CardStyle>
+                        {/* <CardStyle>
                             <FiUsers className="icon"/>
                             <SubTitle>Clients</SubTitle>
                             <SmallTag>Possibly You</SmallTag>
-                        </CardStyle>
+                        </CardStyle> */}
                         <CardStyle>
                             <FaRegFolderOpen className="icon"/>
                             <SubTitle>Projects</SubTitle>
@@ -37,9 +37,9 @@ export default function About(){
                     </AboutCards>
 
                     <Description>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Sint, illum consequatur. Possimus adipisci omnis quia temporibus culpa, quod corporis. 
-                        ipsa illum repudiandae ut ex aperiam itaque modi aliquid ullam eos! 
+                        Kyle is a full-stack software developer, with a passion for learning. Currently working as a cannabis consultant in the state of Washington at Kush 21. With successes ranging from culinary excellence to construction leadership, he lacks no shortage of enthusiasm for collabortaion and team building. <br></br>
+                        Kyle is limitless in his ability to recognize barriers and develop solutions. In all areas of his life he strives to maintain a growth mindset, welcoming criticism and praise all in an effort to improve daily. 
+                        
                     </Description>
 
                     <Link href="#contact"><Button className="primary">Let's Connect</Button></Link>

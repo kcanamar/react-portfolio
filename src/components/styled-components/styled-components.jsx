@@ -119,7 +119,7 @@ export const SubTitle = styled.h5`
 `
 
 export const Section = styled.section`
-    margin-top: 8rem;
+    margin-top: 6rem;
 
     & h2 {
         text-align: center;
@@ -205,10 +205,10 @@ export const Image = styled.img`
         height: 30rem;
         position: absolute;
         left: calc(50% - 11rem);
-        margin-top: 4rem;
+        margin-top: 3rem;
         border-radius: 12rem 12rem 0 0;
         overflow: hidden;
-        padding: 5rem 1.5rem 0.75rem 1.5rem;
+        padding: 1rem 1.5rem 0.75rem 1.5rem;
 
     }
 
@@ -219,20 +219,20 @@ export const Image = styled.img`
     @media screen and (max-width: 1024px) {
         &.me {
             margin-top: 1rem;
-            padding: 3rem 1.5rem 0.75rem 1.5rem;
+            padding: 1rem 1.5rem 0.75rem 1.5rem;
         }
     }
 
     @media screen and (max-width: 600px) {
         &.me {
             margin-top: 2rem;
-            padding: 2rem 1.5rem 0.75rem 1.5rem;
+            padding: 1rem 1.5rem 0.75rem 1.5rem;
         }
     }
     `
 export const StyledHeader = styled.div`
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 2rem;
     overflow: hidden;
     
     .header {
@@ -243,13 +243,13 @@ export const StyledHeader = styled.div`
     }
     
     @media screen and (max-width: 1024px) {
-        padding-top: 4rem;
-        height: 68vh;
+        padding-top: 2rem;
+        height: 80vh;
     }
 
     @media screen and (max-width: 600px) {
         padding-top: 2rem;
-        height: 80vhvh;
+        height: 80vh;
     }
 `
 
