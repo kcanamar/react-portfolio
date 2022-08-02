@@ -243,13 +243,11 @@ export const StyledHeader = styled.div`
     }
     
     @media screen and (max-width: 1024px) {
-        padding-top: 2rem;
-        height: 80vh;
+        padding-top: 1rem;
     }
 
     @media screen and (max-width: 600px) {
-        padding-top: 2rem;
-        height: 80vh;
+        padding-top: 0.5rem;
     }
 `
 
