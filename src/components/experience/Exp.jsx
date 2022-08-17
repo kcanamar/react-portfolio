@@ -16,35 +16,30 @@ export default function Exp(){
                             <BsFillPatchCheckFill className='icon'/>
                             <div>
                                 <ExpDetailSkill>HTML</ExpDetailSkill>
-                                <ExpStatus>Basic</ExpStatus>
                             </div>
                         </ExpDetails>
                         <ExpDetails>
                             <BsFillPatchCheckFill className='icon'/>
                             <div>
                                 <ExpDetailSkill>CSS</ExpDetailSkill>
-                                <ExpStatus>Basic</ExpStatus>
                             </div>
                         </ExpDetails>
                         <ExpDetails>
                             <BsFillPatchCheckFill className='icon'/>
                             <div>
                                 <ExpDetailSkill>JavaScript</ExpDetailSkill>
-                                <ExpStatus>Basic</ExpStatus>
                             </div>
                         </ExpDetails>
                         <ExpDetails>
                             <BsFillPatchCheckFill className='icon'/>
                             <div>
                                 <ExpDetailSkill>React</ExpDetailSkill>
-                                <ExpStatus>Basic</ExpStatus>
                             </div>
                         </ExpDetails>
                         <ExpDetails>
                             <BsFillPatchCheckFill className='icon sc'/>
                             <div>
                                 <ExpDetailSkill>Styled Components</ExpDetailSkill>
-                                <ExpStatus>Basic</ExpStatus>
                             </div>
                         </ExpDetails>
                     </ExpContent>
@@ -57,35 +52,30 @@ export default function Exp(){
                             <BsFillPatchCheckFill className='icon'/>
                             <div>
                                 <ExpDetailSkill>Express</ExpDetailSkill>
-                                <ExpStatus>Basic</ExpStatus>
                             </div>
                         </ExpDetails>
                         <ExpDetails>
                             <BsFillPatchCheckFill className='icon'/>
                             <div>
                                 <ExpDetailSkill>MongoDb</ExpDetailSkill>
-                                <ExpStatus>Basic</ExpStatus>
                             </div>
                         </ExpDetails>
                         <ExpDetails>
                             <BsFillPatchCheckFill className='icon'/>
                             <div>
                                 <ExpDetailSkill>Node JS</ExpDetailSkill>
-                                <ExpStatus>Basic</ExpStatus>
                             </div>
                         </ExpDetails>
                         <ExpDetails>
                             <BsFillPatchCheckFill className='icon'/>
                             <div>
                                 <ExpDetailSkill>Python</ExpDetailSkill>
-                                <ExpStatus>Basic</ExpStatus>
                             </div>
                         </ExpDetails>
                         <ExpDetails>
                             <BsFillPatchCheckFill className='icon'/>
                             <div>
                                 <ExpDetailSkill>PostgreSQL</ExpDetailSkill>
-                                <ExpStatus>Basic</ExpStatus>
                             </div>
                         </ExpDetails>
                     </ExpContent>

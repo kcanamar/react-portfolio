@@ -37,8 +37,8 @@ export default function About(){
                     </AboutCards>
 
                     <Description>
-                        Kyle is a full-stack software developer, with a passion for learning. Currently working as a cannabis consultant in the state of Washington at Kush 21. With successes ranging from culinary excellence to construction leadership, he lacks no shortage of enthusiasm for collabortaion and team building. <br></br>
-                        Kyle is limitless in his ability to recognize barriers and develop solutions. In all areas of his life he strives to maintain a growth mindset, welcoming criticism and praise all in an effort to improve daily. 
+                        I'm a full-stack software developer, with a passion for learning. Currently working as a cannabis consultant in the state of Washington at Kush 21. With successes ranging from culinary excellence to construction leadership, I lack no shortage of enthusiasm for collabortaion and team building. <br></br>
+                        I am limitless in my ability to recognize barriers and develop solutions. In all areas of my life I strive to maintain a growth mindset, welcoming criticism and praise all in an effort to improve daily. 
                         
                     </Description>
 
