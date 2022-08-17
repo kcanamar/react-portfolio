@@ -27,6 +27,20 @@ const data = [
         github: "https://github.com/SunghunP/elevar_crm",
         live: "https://elevarcrm.herokuapp.com/"
     },
+    {
+        id: 5,
+        image: "https://raw.githubusercontent.com/Isyates/pwnterest-project3-frontend/main/public/Main.png",
+        title: "Pwntrest",
+        github: "https://github.com/Isyates/pwnterest-project3-frontend",
+        live: "https://pwnterest.netlify.app/"
+    },
+    {
+        id: 6,
+        image: "https://github.com/kcanamar/capstone-ga/raw/main/public/images/_landingss.png",
+        title: "Janus",
+        github: "https://github.com/kcanamar/capstone-ga",
+        live: "https://capstone-ga.vercel.app/"
+    },
 ]
 
 module.exports = data 
